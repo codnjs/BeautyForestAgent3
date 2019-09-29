@@ -36,7 +36,7 @@
             this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbText = new System.Windows.Forms.RichTextBox();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.tlsMenu.SuspendLayout();
@@ -84,6 +84,7 @@
             this.tsbtnFont.Name = "tsbtnFont";
             this.tsbtnFont.Size = new System.Drawing.Size(29, 24);
             this.tsbtnFont.Text = "toolStripButton1";
+            this.tsbtnFont.Click += new System.EventHandler(this.TsbtnFont_Click);
             // 
             // tsbtnColor
             // 
@@ -93,14 +94,15 @@
             this.tsbtnColor.Name = "tsbtnColor";
             this.tsbtnColor.Size = new System.Drawing.Size(29, 24);
             this.tsbtnColor.Text = "toolStripButton2";
+            this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
-            // richTextBox1
+            // rtbText
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(0, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(581, 177);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.rtbText.Location = new System.Drawing.Point(0, 30);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(581, 177);
+            this.rtbText.TabIndex = 3;
+            this.rtbText.Text = resources.GetString("rtbText.Text");
             // 
             // toolStripStatusLabel1
             // 
@@ -113,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(585, 297);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbText);
             this.Controls.Add(this.tlsMenu);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button1);
@@ -137,7 +139,7 @@
         private System.Windows.Forms.ToolStripButton tsbtnColor;
         private System.Windows.Forms.FontDialog fontDlg;
         private System.Windows.Forms.ColorDialog colorDlg;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
